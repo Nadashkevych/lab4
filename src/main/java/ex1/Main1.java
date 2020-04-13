@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Main1 {
     public static void main(String[] args) {
         String[] array = createStringsArray();
-        intFromStringsArray(array);
+        elementFromStringsArray(array);
     }
 
-    private static void intFromStringsArray(String[] array) {
+    private static void elementFromStringsArray(String[] array) {
         try {
             Scanner input = new Scanner(System.in);
             System.out.println("Ktory element chcesz wyswietlic?");
             int nr = input.nextInt() - 1;
-            System.out.println(Integer.parseInt(array[nr]));
-        } catch (NumberFormatException | NullPointerException e) {
+            System.out.println(array[nr]);
+        } catch (NullPointerException e) {
             e.getMessage();
         }
     }
