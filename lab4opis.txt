@@ -1,0 +1,6 @@
+W danym zadaniu utworzono klase testowa (z metoda main) Main1. Ta klasa posiada dwie metody - createStringsArray, ktora tworzy tablice
+oraz elementFromStringsArray ktora wyciaga z niej element o numerze, podanym przez uzytkownika (ze wzgledu na to ze uzytkownik moze nie wiedziec ze numeracja
+tablicy zaczyna sie od 0, program przyjmuje liczbe ktora jest intuicyjnym/rzeczywistym numerem elementa w tablicy i odejmuje od tej liczby 1
+zeby uzyskac numer czytelny dla programu)
+Metoda, wyciagajaca element, moze rzucac wyjatek klasy NullPointerException jesli wybrany element (bedacy Stringiem) ma wartosc null. Wyjatek 
+jest "lapany" przez konstrukcje try/catch, ktora wyswietla wiadomosc tego wyjatku zamiast stack trace'a.
